@@ -7,7 +7,11 @@ export const GifGrid = ( { category } ) => {
 
     return ( 
         <>
-            <h3>{ category }</h3>
+            <h3 className='mx-4 font-bold text-xl mb-4
+                            border-b border-black'>
+                { category }
+            </h3>
+
             {
                 isLoading && (<p>Loading...</p>)
             }

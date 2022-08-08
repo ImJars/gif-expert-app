@@ -20,8 +20,13 @@ export const AddCategory = ({onNewCategory}) => {
 
     return ( 
         <>
-            <form onSubmit={onSubmit}>
+            <form
+                className='mt-4 mx-4 mb-12' 
+                onSubmit={onSubmit}
+            >
                 <input 
+                    className='w-full py-2 outline-0 border-2 border-gray-300 rounded-lg
+                             hover:border-blue-500 duration-300'
                     type="text"
                     placeholder="Search Gif" 
                     value={ inputValue }

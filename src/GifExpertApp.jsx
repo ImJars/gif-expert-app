@@ -3,7 +3,7 @@ import { AddCategory, GifGrid  } from './components';
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['One Punch']);	
+    const [categories, setCategories] = useState(['Gifs']);	
 
     const onAddCategory = (newCategory) => {
 
@@ -14,7 +14,12 @@ const GifExpertApp = () => {
     }
     return ( 
         <>
-            <h1>GifExpertApp</h1>
+            <header className='bg-blue-400 flex h-16'>
+                <h1 className='bg-blue-400 font-bold text-white
+                                text-2xl grid content-center ml-4'>
+                    GifExpertApp
+                </h1>
+            </header>
                 <AddCategory 
                     onNewCategory={ (value) => onAddCategory(value) }
                 />
